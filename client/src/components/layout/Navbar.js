@@ -5,8 +5,7 @@ class Navbar extends Component {
     return (
       <div>
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg fixed-top text-uppercase" id="mainNav">
-          <div className="container"><a href="#page-top" className="navbar-brand js-scroll-trigger"><i className="fa fa-code"></i>Cyber
-              Monkeys LLC</a><button data-toggle="collapse" data-target="#navbarResponsive" className="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
+          <div className="container"><a href="#page-top" className="navbar-brand js-scroll-trigger"><i className="fa fa-code"></i>APPRENTIO</a><button data-toggle="collapse" data-target="#navbarResponsive" className="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
               aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i className="fa fa-bars"></i></button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="nav navbar-nav ml-auto">
