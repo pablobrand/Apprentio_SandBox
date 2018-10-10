@@ -24,3 +24,4 @@ yarn-error.log*
 build
 
 package-lock.json
+*.cache
