@@ -11,7 +11,7 @@ const styles = theme => ({
   },
   root: {
     textAlign: 'center',
-    padding: 100,
+    padding:100
   },
   textColor: {
     color: 'red'
@@ -23,7 +23,7 @@ function Argenis(props) {
   return (
     <div className={classes.root}>
       <Typography variant="display2" gutterBottom>Hello, this is Argenis!</Typography>
-      <img scr = "/assets/shoes_repo/png/059-shoe-1.png" />
+      <img src = "/assets/shoes_repo/png/059-shoe-1.png" />
     </div>
   );
 }
