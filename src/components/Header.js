@@ -35,9 +35,14 @@ function Header(props) {
           <Typography variant="title" color="inherit" className={classes.grow}>
             Apprent.io SandBox
           </Typography>
-          <Button color="inherit" component={Link} to={Routes.KIDS_PABLO}>Pablo</Button>
+          {/* <Button color="inherit" component={Link} to={Routes.KIDS_PABLO}>Pablo</Button>
           <Button color="inherit" component={Link} to={Routes.KIDS_JOAO}>Joao</Button>
-          <Button color="inherit" component={Link} to={Routes.KIDS_MARCUS}>Marcus</Button>
+          <Button color="inherit" component={Link} to={Routes.KIDS_MARCUS}>Marcus</Button> */}
+
+          <Button color="inherit" component={Link} to={Routes.KIDS_ALEX}>Alex</Button>
+          <Button color="inherit" component={Link} to={Routes.KIDS_ARGENIS}>Argenis</Button>
+          <Button color="inherit" component={Link} to={Routes.KIDS_ARMANDO}>Armando</Button>
+          <Button color="inherit" component={Link} to={Routes.KIDS_CALEB}>Caleb</Button>
         </Toolbar>
       </AppBar>
     </div>
