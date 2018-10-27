@@ -8,10 +8,10 @@ const styles = theme => ({
   root: {
     textAlign: 'center',
     padding: 50,
-    backgroundColor: 'grey',
+    backgroundColor: 'black',
   },
   textColor: {
-    color: 'black',
+    color: 'white',
   },
 });
 
