@@ -36,7 +36,7 @@ function Pablo(props) {
       
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography className={classes.root} variant="display2" gutterBottom>Hello, this is Pablo!</Typography>
+            <Typography className={classes.root} variant="display2" gutterBottom>Hello, this is Pablo Page!</Typography>
           </Paper>
         </Grid>
         <Grid item  xs={6}>
