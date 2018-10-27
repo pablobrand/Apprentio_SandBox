@@ -4,6 +4,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Radio from '@material-ui/core/Radio';
+import FormLabel from '@material-ui/core/FormControl';
+
+
 
 const styles = theme => ({
   root: {
@@ -19,6 +23,11 @@ const styles = theme => ({
     color: 'black',
     textAlign: "center",
   },
+  grid: {
+      direction: 'row',
+      justify: 'center',
+      alignItems: 'center',
+    },
 });
 
 function Armando(props) {
@@ -30,24 +39,25 @@ function Armando(props) {
       <Grid item xs={12}>
           <Paper className={classes.paperOne}>Hello World</Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Paper className={classes.paperOne}>How is your day going?</Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Paper className={classes.paperOne}>Good</Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Paper className={classes.paperOne}>Bad</Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Paper className={classes.paperOne}>Okay</Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Paper className={classes.paperOne}>Alright</Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <Paper className={classes.paperOne}>No Comment</Paper>
         </Grid>
+        <grid value="center" control={<Radio />} label="center" />
     </div>
   );
 }
