@@ -19,7 +19,7 @@ function Alex(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <Typography variant="display2" gutterBottom className={classes.textColor}>Hello, this is Alex!</Typography>
+      <Typography variant="display2" gutterBottom className={classes.textColor}>What Up, its Alex Aka (SweetTea)</Typography>
       <img src="/assets/shoes_repo/png/059-shoe-1.png"/>
     </div>
   );
