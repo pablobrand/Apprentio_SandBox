@@ -43,6 +43,8 @@ function Header(props) {
           <Button color="inherit" component={Link} to={Routes.KIDS_ARGENIS}>Argenis</Button>
           <Button color="inherit" component={Link} to={Routes.KIDS_ARMANDO}>Armando</Button>
           <Button color="inherit" component={Link} to={Routes.KIDS_CALEB}>Caleb</Button>
+          <Button color="inherit" component={Link} to={Routes.KIDS_ULISES}>Ulises</Button>
+
         </Toolbar>
       </AppBar>
     </div>
