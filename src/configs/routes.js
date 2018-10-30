@@ -8,6 +8,7 @@ export default {
   KIDS_CALEB: '/kids/caleb',
   KIDS_ALEX: '/kids/alex',
   KIDS_ARMANDO: '/kids/armando',
+  KIDS_ULISES: '/kids/ulises',
 
 
 };

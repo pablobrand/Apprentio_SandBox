@@ -12,6 +12,7 @@ import Argenis from './components/kids/Argenis';
 import Caleb from './components/kids/Caleb';
 import Alex from './components/kids/Alex';
 import Armando from './components/kids/Armando';
+import Ulises from './components/kids/Ulises';
 
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
             <Route exact path={Routes.KIDS_ARGENIS} component={Argenis} />
             <Route exact path={Routes.KIDS_CALEB} component={Caleb} />
             <Route exact path={Routes.KIDS_ARMANDO} component={Armando} />
+            <Route exact path={Routes.KIDS_ULISES} component={Ulises} />
           </div>
         </BrowserRouter>
       </React.Fragment>
