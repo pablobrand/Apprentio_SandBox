@@ -10,5 +10,5 @@ export default {
   KIDS_ARMANDO: '/kids/armando',
   KIDS_ULISES: '/kids/ulises',
 
-
+  EXERCISE_IMAGE_BUTTON: '/exercise/imageChangedByButton',
 };
