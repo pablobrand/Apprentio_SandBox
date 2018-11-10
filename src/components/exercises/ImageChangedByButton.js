@@ -30,20 +30,35 @@ class ImageChangedByButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      counter: 0,
       selectedImage:
         "https://loveincorporated.blob.core.windows.net/contentimages/fullsize/3f754252-dd5b-42b7-b6ca-7c9dd0209a92-lisbon-portugal-skyline.jpg"
     };
   }
   handleButton1Click = e => {
-    this.setState({
-      selectedImage:
-        "https://loveincorporated.blob.core.windows.net/contentimages/fullsize/3f754252-dd5b-42b7-b6ca-7c9dd0209a92-lisbon-portugal-skyline.jpg"
-    });
+    console.log(`hello world ${this.state.counter}!` );
+    if(this.state.counter === 10) {
+      this.setState({
+        selectedImage:
+          "http://a.espncdn.com/i/teamlogos/nfl/500/lar.png"
+      });
+      alert("you've reached the max amount of clicks!!!");
+    }
+    else {
+      this.setState({
+        counter: this.state.counter+1
+      });
+      this.setState({
+        selectedImage:
+          "https://loveincorporated.blob.core.windows.net/contentimages/fullsize/3f754252-dd5b-42b7-b6ca-7c9dd0209a92-lisbon-portugal-skyline.jpg"
+      });
+    }
+   
+    
   };
 
   render = () => {
     const { classes } = this.props;
-    console.log(this.state);
 
     return (
       <div className={classes.root}>
@@ -58,6 +73,7 @@ class ImageChangedByButton extends Component {
               </Typography>
               <Button variant="raised" className={classes.button} onClick={this.handleButton1Click}>
                 My City
+                 ({this.state.counter})
               </Button>
               <br />
             </Grid>
