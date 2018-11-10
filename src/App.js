@@ -13,6 +13,7 @@ import Caleb from './components/kids/Caleb';
 import Alex from './components/kids/Alex';
 import Armando from './components/kids/Armando';
 import Ulises from './components/kids/Ulises';
+import ImageChangedByButtonDemo from './components/exercises/ImageChangedByButtonDemo';
 
 
 class App extends Component {
@@ -33,6 +34,11 @@ class App extends Component {
             <Route exact path={Routes.KIDS_CALEB} component={Caleb} />
             <Route exact path={Routes.KIDS_ARMANDO} component={Armando} />
             <Route exact path={Routes.KIDS_ULISES} component={Ulises} />
+
+            {/* Ecercises */}
+            <Route exact path={Routes.EXERCISE_IMAGE_BUTTON} component={ImageChangedByButtonDemo} />
+
+
           </div>
         </BrowserRouter>
       </React.Fragment>

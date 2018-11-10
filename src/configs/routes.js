@@ -1,14 +1,14 @@
 export default {
-  HOME: '/',
-  KIDS_PABLO: '/kids/pablo',
-  KIDS_JOAO: '/kids/joao',
-  KIDS_MARCUS: '/kids/marcus',
+  HOME: "/",
+  KIDS_PABLO: "/kids/pablo",
+  KIDS_JOAO: "/kids/joao",
+  KIDS_MARCUS: "/kids/marcus",
 
-  KIDS_ARGENIS: '/kids/argenis',
-  KIDS_CALEB: '/kids/caleb',
-  KIDS_ALEX: '/kids/alex',
-  KIDS_ARMANDO: '/kids/armando',
-  KIDS_ULISES: '/kids/ulises',
+  KIDS_ARGENIS: "/kids/argenis",
+  KIDS_CALEB: "/kids/caleb",
+  KIDS_ALEX: "/kids/alex",
+  KIDS_ARMANDO: "/kids/armando",
+  KIDS_ULISES: "/kids/ulises",
 
-
+  EXERCISE_IMAGE_BUTTON: "/exercise/imageChangedByButton"
 };
