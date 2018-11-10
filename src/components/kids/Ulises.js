@@ -6,10 +6,11 @@ import Typography from "@material-ui/core/Typography";
 const styles = theme => ({
   root: {
     textAlign: "center",
-    padding: 50
+    padding: "50px"
   }
 });
-class Marcus extends Component {
+
+class Ulises extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -20,14 +21,15 @@ class Marcus extends Component {
     return (
       <div className={classes.root}>
         <Typography variant="display2" gutterBottom>
-          Hello, this is Marcus!
+          Hello, this is Ulises's page!
         </Typography>
+        <img src="/assets/shoes_repo/png/059-shoe-1.png" />
       </div>
     );
   };
 }
-Marcus.propTypes = {
+Ulises.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Marcus);
+export default withStyles(styles)(Ulises);
