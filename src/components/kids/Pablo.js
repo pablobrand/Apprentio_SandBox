@@ -28,7 +28,7 @@ const styles = theme => ({
   },
 });
 
-function Pablo(props) {
+const Pablo = (props) => {
   const { classes } = props;
   return (
     <div>

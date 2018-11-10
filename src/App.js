@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
+import CardHolder from './components/CardHolder';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Routes from './configs/routes';
 import Pablo from './components/kids/Pablo';
@@ -35,6 +36,7 @@ class App extends Component {
             <Route exact path={Routes.KIDS_ULISES} component={Ulises} />
           </div>
         </BrowserRouter>
+        <CardHolder/>
       </React.Fragment>
     );
   }
