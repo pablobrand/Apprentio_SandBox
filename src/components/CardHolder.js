@@ -43,7 +43,11 @@ class CardHolder extends Component {
             <div id='Cardholder'>
               <button onClick={this.switchNameHandler.bind(this,'NewNamePablo')}>Switch Name</button>
               <h1 style={this.state.h1Style}>something here</h1>
-              <Person name={this.state.persons[0].name} age={this.state.persons[0].age}></Person>
+              <Person 
+                name={this.state.persons[0].name} 
+                age={this.state.persons[0].age}
+                click={this.switchNameHandler.bind(this,'MyNameTwoPablo')}
+              ></Person>
               <Person name={this.state.persons[1].name} age={this.state.persons[1].age}></Person>
             </div>
     )
