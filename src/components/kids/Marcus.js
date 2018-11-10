@@ -1,27 +1,33 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
   root: {
-    textAlign: 'center',
+    textAlign: "center",
     padding: 50
-  },
+  }
 });
+class Marcus extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-function Marcus(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root}>
-      <Typography variant="display2" gutterBottom>Hello, this is Marcus!</Typography>
-    </div>
-  );
+  render = () => {
+    const { classes } = this.props;
+    return (
+      <div className={classes.root}>
+        <Typography variant="display2" gutterBottom>
+          Hello, this is Marcus!
+        </Typography>
+      </div>
+    );
+  };
 }
-
 Marcus.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Marcus);

@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Routes from './configs/routes';
-import Pablo from './components/kids/Pablo';
-import Joao from './components/kids/Joao';
-import Marcus from './components/kids/Marcus';
-import Argenis from './components/kids/Argenis';
-import Caleb from './components/kids/Caleb';
-import Alex from './components/kids/Alex';
-import Armando from './components/kids/Armando';
-import Ulises from './components/kids/Ulises';
-import ImageChangedByButtonDemo from './components/exercises/ImageChangedByButtonDemo';
-
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import { BrowserRouter, Route } from "react-router-dom";
+import Routes from "./configs/routes";
+import Pablo from "./components/kids/Pablo";
+import Joao from "./components/kids/Joao";
+import Marcus from "./components/kids/Marcus";
+import Argenis from "./components/kids/Argenis";
+import Caleb from "./components/kids/Caleb";
+import Alex from "./components/kids/Alex";
+import Armando from "./components/kids/Armando";
+import Ulises from "./components/kids/Ulises";
+import ImageChangedByButton from "./components/exercises/ImageChangedByButton";
 
 class App extends Component {
   render() {
     return (
-
       <React.Fragment>
         <BrowserRouter>
           <div className="App">
@@ -36,9 +34,7 @@ class App extends Component {
             <Route exact path={Routes.KIDS_ULISES} component={Ulises} />
 
             {/* Ecercises */}
-            <Route exact path={Routes.EXERCISE_IMAGE_BUTTON} component={ImageChangedByButtonDemo} />
-
-
+            <Route exact path={Routes.EXERCISE_IMAGE_BUTTON} component={ImageChangedByButton} />
           </div>
         </BrowserRouter>
       </React.Fragment>
