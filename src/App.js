@@ -37,7 +37,7 @@ class App extends Component {
             <Route exact path={Routes.EXERCISE_IMAGE_BUTTON} component={ImageChangedByButton} />
           </div>
         </BrowserRouter>
-        <CardHolder/>
+        
       </React.Fragment>
     );
   }

@@ -5,26 +5,24 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { SvgLoader, SvgProxy } from "react-svgmt";
+import ImgMediaCard from "../../reuseComponents/ImgMediaCard";
+import Button from '@material-ui/core/Button';
 
 const svgUrl = "../assets/kids_shoes/shoeOne.svg";
 
 const styles = theme => ({
   root: {
     textAlign: "center",
-    padding: 50
+    padding: 50,
+    color: "black"
   },
-  svgAtr: {
-    height: "100",
-    width: "100"
+  imgContainer: { 
+    
   },
-  svgColorOne: {
-    cx: "50",
-    cy: "50",
-    r: "40",
-    stroke: "black",
-    "stroke-width": "3",
-    fill: "red"
+  button: {
+    margin: theme.spacing.unit,
   }
+
 });
 
 class Pablo extends Component {
@@ -37,27 +35,36 @@ class Pablo extends Component {
     const { classes } = this.props;
     return (
       <div>
-        <Grid container spacing={16}>
+        <Grid container spacing={12}>
           <Grid item xs={12}>
             <Paper className={classes.paper}>
               <Typography className={classes.root} variant="display2" gutterBottom>
-                Hello, this is Pablo Page!
+                My Super Page Name or Tittle
               </Typography>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>
-              <svg className={classes.svgAtr}>
-                <circle className={classes.svgColorOne} />
-              </svg>
-            </Paper>
-          </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>
-              <SvgLoader path={svgUrl}>
-                <SvgProxy selector="#shoeOutline" fill="green" />
-              </SvgLoader>
-            </Paper>
+          <Grid item xs={12}>
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <h2>My quick image tittle</h2>
+                <ImgMediaCard className={classes.imgContainer}/>
+              </Paper>
+            </Grid>
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <Typography variant="h5" component="h3">
+                  This is my "Take Action Section
+                </Typography>
+                
+                <Button variant="outlined" color="primary" className={classes.button}>
+                  Primary
+                </Button>
+
+                <Button variant="outlined" href="#outlined-buttons" className={classes.button}>
+                  Link 
+                </Button>
+              </Paper>
+            </Grid>
           </Grid>
         </Grid>
       </div>
